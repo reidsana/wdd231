@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="WDD231 Course Home Page">
+  <meta name="author" content="Oksana Reid">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD231 | Home</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="brand">
+    <img src="images/logo.svg" alt="Site logo">
+    <span>Site Name</span>
+  </div>
+  <button id="menu" aria-label="Toggle Menu"></button>
+</header>
+
+<nav id="nav">
+  <a href="index.html" class="active">Home</a>
+  <a href="chamber/">Chamber Project</a>
+  <a href="final/">Final Project</a>
+</nav>
+
+<main>
+  <h1>Home</h1>
+
+  <section class="intro">
+    <div class="about">
+      <h2>About Me</h2>
+      <p>
+        My name is Oksana Reid, a dedicated learner with a passion for web development. My journey in Web development has introduced me to HTML, CSS, and JavaScript, allowing me to build dynamic and visually appealing web pages. I enjoy experimenting with new technologies, improving my coding skills, and creating projects that combine both functionality and design. Learning to problem-solve and think creatively through code has been a rewarding part of my growth as a web developer.
+      </p>
+    </div>
+
+    <div class="photo">
+      <h2>Student Photo</h2>
+      <img src="images/student.jpg" alt="Student portrait">
+    </div>
+  </section>
+
+  <section class="courses-section">
+    <h2>Web Certificate Courses</h2>
+
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="cse">CSE</button>
+      <button data-filter="wdd">WDD</button>
+    </div>
+
+    <div id="courses"></div>
+    <p id="credits"></p>
+  </section>
+</main>
+
+<footer>
+  <div class="social">
+    <a href="https://linkedin.com" aria-label="LinkedIn">in</a>
+    <a href="https://github.com" aria-label="GitHub">GitHub</a>
+    <a href="https://x.com" aria-label="X">X</a>
+  </div>
+
+  <p>&copy; <span id="year"></span> Oksana Reid | Jamaica </p>
+  <p id="lastModified"></p>
+</footer>
+</body>
+</html>
