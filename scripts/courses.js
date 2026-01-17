@@ -16,7 +16,7 @@ function displayCourses(list) {
   list.forEach(course => {
     const div = document.createElement("div");
     div.className = `course ${course.completed ? "completed" : ""}`;
-    div.textContent = course.code;
+    div.innerHTML = `<strong>${course.code}</strong><p>${course.name}</p>`;
     courseContainer.appendChild(div);
   });
 }
