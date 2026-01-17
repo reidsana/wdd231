@@ -1,23 +1,48 @@
 @media (min-width: 768px) {
+  /* NAVIGATION */
   nav {
     display: flex;
     justify-content: center;
+    background-color: var(--dark); /* Ensure dark background with light text */
   }
 
   #menu {
-    display: none;
+    display: none; /* Hide hamburger on larger screens */
   }
 
+  /* INTRO SECTION */
   .intro {
-    grid-template-columns: 2fr 1fr;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two-column layout */
+    gap: 1rem;
   }
 
+ 
   #courses {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
   }
 
+ 
   main {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1rem;
+  }
+
+  
+  nav a,
+  header,
+  footer,
+  .filters button {
+    color: var(--text-light);
+  }
+
+  .about,
+  .photo,
+  .course,
+  .completed {
+    color: var(--text); 
   }
 }
