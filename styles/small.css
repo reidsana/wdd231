@@ -1,15 +1,15 @@
 :root {
-  --dark: #222;
+  --dark: #222222;
   --light: #e6e6e6;
-  --accent: #444;
-  --text: #000;
+  --accent: #444444;
+  --text: #000000;
   --completed-bg: #b7e4c7;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  background: #f5f5f5;
+  background-color: #f5f5f5;
   color: var(--text);
 }
 
@@ -17,8 +17,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--dark);
-  color: white;
+  background-color: var(--dark);
+  color: #ffffff;
   padding: 0.75rem 1rem;
 }
 
@@ -30,19 +30,22 @@ header {
 
 .brand img {
   width: 32px;
+  height: auto;
 }
 
 #menu {
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   background: none;
   border: none;
-  color: white;
+  color: #ffffff;
+  cursor: pointer;
 }
 
+/* NAVIGATION */
 nav {
   display: none;
   flex-direction: column;
-  background: var(--dark);
+  background-color: var(--dark);
 }
 
 nav.open {
@@ -50,17 +53,19 @@ nav.open {
 }
 
 nav a {
-  color: white;
+  color: #ffffff; /* ✅ FIXED CONTRAST */
   padding: 0.75rem;
   text-decoration: none;
+  font-weight: 600;
 }
 
 nav a:hover,
 nav a.active {
-  background: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
 }
 
+/* MAIN */
 main {
   padding: 1rem;
 }
@@ -72,7 +77,7 @@ main {
 
 .about,
 .photo {
-  background: var(--light);
+  background-color: var(--light);
   padding: 1rem;
   border-radius: 6px;
 }
@@ -82,6 +87,7 @@ main {
   height: auto;
 }
 
+/* COURSES */
 .courses-section {
   margin-top: 2rem;
 }
@@ -95,14 +101,14 @@ main {
 .filters button {
   flex: 1;
   padding: 0.5rem;
-  background: var(--accent);
-  color: white;
+  background-color: var(--accent);
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
 
 .filters button:hover {
-  background: var(--dark);
+  background-color: var(--dark);
 }
 
 #courses {
@@ -111,20 +117,20 @@ main {
 }
 
 .course {
-  background: #ccc;
+  background-color: #cccccc;
   padding: 0.75rem;
   text-align: center;
   border-radius: 4px;
 }
 
 .completed {
-  background: var(--completed-bg);
+  background-color: var(--completed-bg);
   font-weight: 600;
 }
 
 footer {
-  background: var(--dark);
-  color: white;
+  background-color: var(--dark);
+  color: #ffffff;
   text-align: center;
   padding: 1rem;
 }
@@ -137,6 +143,7 @@ footer .social {
 }
 
 footer a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
+
