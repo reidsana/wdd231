@@ -1,0 +1,8 @@
+#members.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+#members.list section {
+  border-bottom: 1px solid #ccc;
+}
