@@ -65,3 +65,12 @@
 </body>
 </html>
 
+
+
+<footer>
+    <p>&copy; <span id="year"></span> Kingston Chamber of Commerce | WDD 231 | Oksana Reid | Last modified: <span id="lastMod"></span></p>
+</footer>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('lastMod').textContent = document.lastModified;
+</script>
