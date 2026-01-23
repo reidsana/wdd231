@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Island Brew Café",
+      "address": "12 Hope Road, Kingston, Jamaica",
+      "phone": "876-555-1010",
+      "url": "https://islandbrew.jm",
+      "image": "islandbrew.webp",
+      "membership": 2
+    },
+    {
+      "name": "Blue Mountain Tours",
+      "address": "45 Old Hope Road, Kingston, Jamaica",
+      "phone": "876-555-2020",
+      "url": "https://bluemountaintours.jm",
+      "image": "bluemountain.webp",
+      "membership": 3
+    },
+    {
+      "name": "Reggae Tech Solutions",
+      "address": "88 Half Way Tree Road, Kingston, Jamaica",
+      "phone": "876-555-3030",
+      "url": "https://reggaetech.jm",
+      "image": "reggaetech.webp",
+      "membership": 3
+    },
+    {
+      "name": "Caribbean Craft Market",
+      "address": "Harbour Street, Kingston, Jamaica",
+      "phone": "876-555-4040",
+      "url": "https://caribcraft.jm",
+      "image": "craftmarket.webp",
+      "membership": 1
+    },
+    {
+      "name": "Sunrise Fitness Studio",
+      "address": "23 Constant Spring Road, Kingston, Jamaica",
+      "phone": "876-555-5050",
+      "url": "https://sunrisefitness.jm",
+      "image": "sunrisefitness.webp",
+      "membership": 2
+    },
+    {
+      "name": "Ocean View Realty",
+      "address": "10 Trafalgar Road, Kingston, Jamaica",
+      "phone": "876-555-6060",
+      "url": "https://oceanviewrealty.jm",
+      "image": "oceanview.webp",
+      "membership": 3
+    },
+    {
+      "name": "Jamaica Green Energy",
+      "address": "5 Lady Musgrave Road, Kingston, Jamaica",
+      "phone": "876-555-7070",
+      "url": "https://greenenergy.jm",
+      "image": "greenenergy.webp",
+      "membership": 2
+    }
+  ]
+}
