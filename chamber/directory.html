@@ -2,31 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Kingston Chamber of Commerce business directory">
-  <meta name="author" content="Oksana Reid">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Kingston Chamber of Commerce | Directory</title>
 
+
+  <meta name="description" content="Explore verified local businesses, services, and organizations that are members of the Kingston Chamber of Commerce in Jamaica.">
+  <meta name="author" content="Oksana Reid">
+
+ 
   <link rel="icon" href="favicon.ico">
 
+ 
   <meta property="og:title" content="Kingston Chamber of Commerce Directory">
-  <meta property="og:description" content="Discover local businesses in Kingston, Jamaica.">
-  <meta property="og:image" content="images/social.webp">
-  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+  <meta property="og:description" content="Browse trusted local businesses and organizations that are members of the Kingston Chamber of Commerce in Jamaica.">
+  <meta property="og:image" content="https://reidsana.github.io/wdd231/chamber/images/chamber-social.webp">
+  <meta property="og:url" content="https://reidsana.github.io/wdd231/chamber/directory.html">
 
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
+  
   <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
 <header>
-  <h1>Kingston Chamber of Commerce</h1>
   <nav>
-    <ul>
+    <ul class="navigation">
       <li><a href="#">Home</a></li>
       <li><a href="#">Discover</a></li>
       <li><a href="directory.html">Directory</a></li>
@@ -36,10 +46,13 @@
 </header>
 
 <main>
+  <h1>Kingston Chamber of Commerce</h1>
   <h2>Business Directory</h2>
 
-  <button id="grid">Grid</button>
-  <button id="list">List</button>
+  <div class="view-buttons">
+    <button id="grid">Grid</button>
+    <button id="list">List</button>
+  </div>
 
   <section id="members" class="grid"></section>
 </main>
@@ -51,3 +64,4 @@
 </footer>
 </body>
 </html>
+
