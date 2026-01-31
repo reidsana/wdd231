@@ -1,3 +1,37 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #004b87;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid white;
+}
+
+main {
+  padding: 1rem;
+}
+
 .hero {
   position: relative;
 }
@@ -5,40 +39,42 @@
 .hero img {
   width: 100%;
   height: auto;
-  display: block;
 }
 
 .cta {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1rem;
+  right: 1rem;
   background-color: #004b87;
-  color: #fff;
+  color: white;
   padding: 0.75rem 1.25rem;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 4px;
 }
 
-main {
+
+.info-grid {
   display: grid;
   gap: 1rem;
+  margin-top: 1rem;
+}
+
+.info-grid section {
+  border: 1px solid #ccc;
   padding: 1rem;
 }
 
+
 @media (min-width: 768px) {
-  main {
+  .info-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .hero {
-    grid-column: 1 / -1;
-  }
-
-  .spotlights {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
   }
 }
+
+footer {
+  background-color: #004b87;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
