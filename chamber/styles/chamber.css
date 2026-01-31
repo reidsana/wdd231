@@ -1,11 +1,22 @@
+:root {
+  --primary: #1f3a5f;
+  --secondary: #3b6ea5;
+  --accent: #e5e7eb;
+  --text-dark: #1f2933;
+  --white: #ffffff;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  color: var(--text-dark);
+  background-color: var(--white);
 }
 
+/* HEADER */
 header {
-  background-color: #004b87;
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
   padding: 1rem;
   text-align: center;
 }
@@ -19,19 +30,21 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-weight: bold;
 }
 
 nav a.active {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--white);
 }
 
+/* MAIN */
 main {
   padding: 1rem;
 }
 
+/* HERO */
 .hero {
   position: relative;
 }
@@ -39,20 +52,22 @@ main {
 .hero img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .cta {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  background-color: #004b87;
-  color: white;
+  background-color: var(--secondary);
+  color: var(--white);
   padding: 0.75rem 1.25rem;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 4px;
 }
 
-
+/* INFO GRID */
 .info-grid {
   display: grid;
   gap: 1rem;
@@ -60,21 +75,22 @@ main {
 }
 
 .info-grid section {
-  border: 1px solid #ccc;
+  border: 1px solid var(--accent);
   padding: 1rem;
+  background-color: var(--white);
 }
 
-
+/* DESKTOP */
 @media (min-width: 768px) {
   .info-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* FOOTER */
 footer {
-  background-color: #004b87;
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
   text-align: center;
   padding: 1rem;
 }
-
