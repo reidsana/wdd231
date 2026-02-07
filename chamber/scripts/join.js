@@ -1,1 +1,6 @@
-document.getElementById("timestamp").value = new Date().toISOString();
+const timestampField = document.getElementById("timestamp");
+
+if (timestampField) {
+  timestampField.value = new Date().toISOString();
+}
+
