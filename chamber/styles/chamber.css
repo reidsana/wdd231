@@ -131,3 +131,68 @@ footer {
     grid-template-columns: 2fr 1fr;
   }
 }
+
+/* ===== HAMBURGER NAV ===== */
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Hamburger button */
+#menuButton {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Mobile nav (hidden by default) */
+#primaryNav {
+  display: none;
+}
+
+#primaryNav.open {
+  display: block;
+}
+
+#primaryNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#primaryNav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+#primaryNav a.active {
+  background-color: var(--secondary);
+  font-weight: 600;
+}
+
+
+@media (min-width: 768px) {
+  #menuButton {
+    display: none;
+  }
+
+  #primaryNav {
+    display: block;
+  }
+
+  #primaryNav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  #primaryNav a {
+    padding: 0.75rem 1.5rem;
+  }
+}
