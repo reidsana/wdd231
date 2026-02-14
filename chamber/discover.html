@@ -6,16 +6,29 @@
 
   <title>Discover Kingston | Kingston Chamber of Commerce</title>
 
-  <meta name="description" content="Discover attractions, landmarks, and community features in Kingston, Jamaica.">
+  <meta name="description" content="Discover attractions, landmarks, culture, and community features in Kingston, Jamaica.">
   <meta name="author" content="Oksana Reid">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Discover Kingston | Chamber of Commerce">
+  <meta property="og:description" content="Explore attractions, landmarks, culture, and community highlights in Kingston, Jamaica.">
+  <meta property="og:image" content="https://reidsana.github.io/wdd231/chamber/images/social-preview.webp">
+  <meta property="og:url" content="https://reidsana.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/chamber.css">
 
-  <!-- JS (MODULE REQUIRED) -->
+  <!-- JavaScript -->
   <script type="module" src="scripts/discover.js"></script>
   <script src="scripts/menu.js" defer></script>
   <script src="scripts/dates.js" defer></script>
@@ -25,7 +38,7 @@
 <header>
   <div class="header-bar">
     <h2>Kingston Chamber of Commerce</h2>
-    <button id="menuButton" aria-label="Toggle navigation">☰</button>
+    <button id="menuButton" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   </div>
 
   <nav id="primaryNav">
@@ -44,7 +57,7 @@
   
   <section id="visit-message" class="visit-message"></section>
 
- 
+  
   <section class="discover-grid" id="discover-grid"></section>
 </main>
 
@@ -55,4 +68,3 @@
 </footer>
 </body>
 </html>
-
