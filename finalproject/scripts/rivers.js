@@ -1,5 +1,4 @@
 import { setupMenu } from "./menu.js";
-
 setupMenu();
 
 const container = document.querySelector("#riverContainer");
@@ -8,19 +7,14 @@ const modalContent = document.querySelector("#modalContent");
 const closeModal = document.querySelector("#closeModal");
 
 
-const basePath = window.location.hostname.includes("localhost") || window.location.hostname.includes("127.0.0.1")
-  ? "./"  
-  : "./"; 
-
-const jsonPath = `${basePath}data/rivers.json`;
-const imagesPath = `${basePath}images/`;
+const jsonPath = "./data/rivers.json";
+const imagesPath = "./images/";
 
 
 async function getRivers() {
   try {
     const response = await fetch(jsonPath);
     if (!response.ok) throw new Error(`Failed to fetch rivers: ${response.status}`);
-
     const rivers = await response.json();
     displayRivers(rivers);
   } catch (error) {
@@ -43,7 +37,6 @@ function displayRivers(rivers) {
       <button type="button" aria-label="View details for ${river.name}">View Details</button>
     `;
 
-    
     card.querySelector("button").addEventListener("click", () => {
       modalContent.innerHTML = `
         <h2>${river.name}</h2>
@@ -64,5 +57,5 @@ modal.addEventListener("click", e => {
   if (e.target === modal) modal.close();
 });
 
-getRivers();
 
+getRivers();
