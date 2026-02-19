@@ -1,9 +1,6 @@
-
 import { setupMenu } from "./menu.js";
 
-
 setupMenu();
-
 
 const container = document.querySelector("#riverContainer");
 const modal = document.querySelector("#riverModal");
@@ -11,9 +8,9 @@ const modalContent = document.querySelector("#modalContent");
 const closeModal = document.querySelector("#closeModal");
 
 
-const basePath = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
-  ? "../"  
-  : "./";   
+const basePath = window.location.hostname.includes("localhost") || window.location.hostname.includes("127.0.0.1")
+  ? "./"  
+  : "./"; 
 
 const jsonPath = `${basePath}data/rivers.json`;
 const imagesPath = `${basePath}images/`;
@@ -21,17 +18,14 @@ const imagesPath = `${basePath}images/`;
 
 async function getRivers() {
   try {
-    console.log(`Fetching rivers from: ${jsonPath}`);
     const response = await fetch(jsonPath);
-    if (!response.ok) throw new Error(`Failed to fetch river data. Status: ${response.status}`);
+    if (!response.ok) throw new Error(`Failed to fetch rivers: ${response.status}`);
 
     const rivers = await response.json();
-    console.log("Rivers loaded:", rivers);
     displayRivers(rivers);
-
   } catch (error) {
-    container.innerHTML = "<p>Unable to load rivers at this time. Please try again later.</p>";
-    console.error("Error fetching rivers:", error);
+    container.innerHTML = "<p>Unable to load rivers at this time.</p>";
+    console.error(error);
   }
 }
 
@@ -49,7 +43,7 @@ function displayRivers(rivers) {
       <button type="button" aria-label="View details for ${river.name}">View Details</button>
     `;
 
-  
+    
     card.querySelector("button").addEventListener("click", () => {
       modalContent.innerHTML = `
         <h2>${river.name}</h2>
@@ -57,7 +51,6 @@ function displayRivers(rivers) {
         <p><strong>Difficulty:</strong> ${river.difficulty}</p>
       `;
       modal.showModal();
-
       localStorage.setItem("lastViewedRiver", river.name);
     });
 
@@ -67,6 +60,9 @@ function displayRivers(rivers) {
 
 
 closeModal.addEventListener("click", () => modal.close());
-modal.addEventListener("click", (e) => {
+modal.addEventListener("click", e => {
   if (e.target === modal) modal.close();
 });
+
+getRivers();
+
