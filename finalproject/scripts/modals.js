@@ -4,7 +4,7 @@ const closeBtn = document.querySelector('#closeModal');
 
 export function openModal(trip) {
   content.innerHTML = `
-    <h2>${trip.name}</h2>
+    <h2 id="modalTitle">${trip.name}</h2>
     <p>River: ${trip.river}</p>
     <p>Difficulty: ${trip.level}</p>
     <p>Price: $${trip.price}</p>
@@ -15,3 +15,4 @@ export function openModal(trip) {
 closeBtn.addEventListener('click', () => {
   modal.close();
 });
+

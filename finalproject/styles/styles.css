@@ -1,35 +1,58 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+:root {
+  --primary: #1f4d3a;
+  --accent: #d9a441;
+  --light: #f4f6f5;
 }
 
-header {
-  background: #1f4d3a;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--light);
+}
+
+header, footer {
+  background-color: var(--primary);
   color: white;
   padding: 1rem;
 }
 
+nav button {
+  background: var(--accent);
+  color: var(--primary);
+  border: none;
+  padding: 0.5rem;
+}
+
 nav ul {
-  display: none;
   list-style: none;
   padding: 0;
+  display: none;
 }
 
 nav ul.open {
   display: block;
 }
 
-button {
-  padding: 0.5rem;
+main {
+  padding: 1rem;
 }
 
 #tripsContainer {
   display: grid;
   gap: 1rem;
-  padding: 1rem;
 }
 
 .trip {
-  border: 1px solid #ccc;
+  background: white;
   padding: 1rem;
+  border-radius: 4px;
 }
+
+button {
+  background-color: var(--accent);
+  color: var(--primary);
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+

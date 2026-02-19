@@ -3,26 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>RiverLine Fly Fishing | Home</title>
-  <meta name="description" content="Guided fly fishing trips with RiverLine Fly Fishing.">
+  <meta name="description" content="Professional guided fly fishing trips for all experience levels.">
   <meta name="author" content="Oksana Reid">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/styles.css">
 
- 
   <meta property="og:title" content="RiverLine Fly Fishing">
-  <meta property="og:description" content="Professional guided fly fishing trips.">
+  <meta property="og:description" content="Guided fly fishing trips and seasonal information.">
 </head>
 
 <body>
 <header>
   <h1>RiverLine Fly Fishing</h1>
-  <nav>
-    <button id="menuBtn" aria-label="Open navigation menu" aria-expanded="false">
-  ☰
-</button>
 
+  <nav>
+    <button id="menuBtn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
     <ul id="navList">
       <li><a href="index.html">Home</a></li>
       <li><a href="trips.html">Trips</a></li>
@@ -34,30 +31,30 @@
 <main>
   <section>
     <h2>Welcome</h2>
-    <p>Experience guided fly fishing trips designed for all skill levels.</p>
+    <p>
+      RiverLine Fly Fishing offers guided fly fishing experiences designed for beginners
+      through advanced anglers.
+    </p>
   </section>
 
   <section>
     <h2>Contact Us</h2>
-    <form action="form-action.html" method="get">
-      <label>
-        Name:
-        <input type="text" name="name" required>
-      </label>
 
-      <label>
-        Email:
-        <input type="email" name="email" required>
-      </label>
+    <form action="formaction.html" method="get">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
 
-      <button type="submit">Send</button>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <button type="submit">Submit</button>
     </form>
   </section>
 </main>
 
 <footer>
   <p>&copy; 2026 RiverLine Fly Fishing</p>
-  <a href="https://youtube.com" target="_blank">Project Video</a>
+  <a href="https://youtube.com" target="_blank" rel="noopener">Project Video</a>
 </footer>
 
 <script type="module" src="js/main.js"></script>

@@ -1,4 +1,3 @@
-
 const menuBtn = document.querySelector('#menuBtn');
 const navList = document.querySelector('#navList');
 
@@ -7,3 +6,4 @@ menuBtn.addEventListener('click', () => {
   menuBtn.setAttribute('aria-expanded', isOpen);
   localStorage.setItem('menuOpen', isOpen);
 });
+

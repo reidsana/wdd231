@@ -8,10 +8,10 @@ async function loadTrips() {
     const trips = await response.json();
 
     trips.forEach(trip => {
-      const div = document.createElement('div');
-      div.classList.add('trip');
+      const card = document.createElement('div');
+      card.classList.add('trip');
 
-      div.innerHTML = `
+      card.innerHTML = `
         <h3>${trip.name}</h3>
         <p>River: ${trip.river}</p>
         <p>Level: ${trip.level}</p>
@@ -19,15 +19,16 @@ async function loadTrips() {
         <button>Details</button>
       `;
 
-      div.querySelector('button').addEventListener('click', () => {
+      card.querySelector('button').addEventListener('click', () => {
         openModal(trip);
       });
 
-      container.appendChild(div);
+      container.appendChild(card);
     });
   } catch (error) {
-    container.textContent = 'Failed to load trips.';
+    container.textContent = 'Unable to load trips.';
   }
 }
 
 loadTrips();
+

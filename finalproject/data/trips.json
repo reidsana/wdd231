@@ -10,7 +10,7 @@
   { "id": 9, "name": "Tailwater Pro", "river": "Missouri", "price": 330, "level": "Advanced" },
   { "id": 10, "name": "Calm Waters", "river": "Provo", "price": 240, "level": "Beginner" },
   { "id": 11, "name": "Sunset Drift", "river": "Weber", "price": 255, "level": "Beginner" },
-  { "id": 12, "name": "Big Trout", "river": "Henry’s Fork", "price": 360, "level": "Advanced" },
+  { "id": 12, "name": "Big Trout", "river": "Henrys Fork", "price": 360, "level": "Advanced" },
   { "id": 13, "name": "Wade Trip", "river": "Deschutes", "price": 270, "level": "Intermediate" },
   { "id": 14, "name": "High Country", "river": "Yakima", "price": 295, "level": "Intermediate" },
   { "id": 15, "name": "Clear Water", "river": "Metolius", "price": 310, "level": "Advanced" }
