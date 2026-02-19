@@ -1,0 +1,18 @@
+[
+  {"name":"Madison River","state":"Montana","species":"Brown Trout","season":"May-Oct","difficulty":"Intermediate","image":"river1.webp"},
+  {"name":"Yellowstone River","state":"Montana","species":"Rainbow Trout","season":"June-Sept","difficulty":"Beginner","image":"river2.webp"},
+  {"name":"Snake River","state":"Wyoming","species":"Cutthroat","season":"May-Sept","difficulty":"Intermediate","image":"river3.webp"},
+  {"name":"Green River","state":"Utah","species":"Brown Trout","season":"Year-Round","difficulty":"Advanced","image":"river4.webp"},
+  {"name":"Colorado River","state":"Colorado","species":"Rainbow Trout","season":"April-Oct","difficulty":"Intermediate","image":"river5.webp"},
+  {"name":"Deschutes River","state":"Oregon","species":"Steelhead","season":"June-Oct","difficulty":"Advanced","image":"river6.webp"},
+  {"name":"Bighorn River","state":"Montana","species":"Brown Trout","season":"Year-Round","difficulty":"Beginner","image":"river7.webp"},
+  {"name":"Gallatin River","state":"Montana","species":"Rainbow Trout","season":"May-Oct","difficulty":"Intermediate","image":"river8.webp"},
+  {"name":"Henry’s Fork","state":"Idaho","species":"Cutthroat","season":"June-Sept","difficulty":"Advanced","image":"river9.webp"},
+  {"name":"Provo River","state":"Utah","species":"Brown Trout","season":"Year-Round","difficulty":"Beginner","image":"river10.webp"},
+  {"name":"Rogue River","state":"Oregon","species":"Steelhead","season":"Sept-Nov","difficulty":"Advanced","image":"river11.webp"},
+  {"name":"Kenai River","state":"Alaska","species":"Salmon","season":"June-Aug","difficulty":"Intermediate","image":"river12.webp"},
+  {"name":"White River","state":"Arkansas","species":"Rainbow Trout","season":"Year-Round","difficulty":"Beginner","image":"river13.webp"},
+  {"name":"Blackfoot River","state":"Montana","species":"Cutthroat","season":"June-Oct","difficulty":"Intermediate","image":"river14.webp"},
+  {"name":"Yampa River","state":"Colorado","species":"Brown Trout","season":"May-Sept","difficulty":"Intermediate","image":"river15.webp"}
+]
+
