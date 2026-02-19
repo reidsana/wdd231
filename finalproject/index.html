@@ -3,33 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>RiverLine Fly Fishing | Guided Trout Adventures</title>
-  <meta name="description" content="RiverLine Fly Fishing offers guided trout fishing adventures on premier western rivers. Book your unforgettable experience today.">
+  <title>RiverLine Fly Fishing</title>
+  <meta name="description" content="Explore premier fly fishing rivers with RiverLine Fly Fishing.">
   <meta name="author" content="Oksana Reid">
 
   
   <link rel="icon" href="images/favicon.ico">
 
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
-  
+
   <link rel="stylesheet" href="styles/main.css">
 
  
-  <meta property="og:title" content="RiverLine Fly Fishing | Guided Trout Adventures">
-  <meta property="og:description" content="Experience guided trout fishing adventures on premier western rivers with RiverLine Fly Fishing. Book your trip today!">
+  <meta property="og:title" content="RiverLine Fly Fishing">
+  <meta property="og:description" content="Explore premier fly fishing rivers with RiverLine Fly Fishing.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://reidsana.github.io/wdd231/images/hero.webp">
-  <meta property="og:url" content="https://reidsana.github.io/wdd231/index.html">
+  <meta property="og:image" content="images/hero.webp">
+  <meta property="og:url" content="https://reidsana.github.io/wdd231/finalproject/index.html">
 
-
-  <script type="module" src="scripts/main.js" defer></script>
+  
+  <script type="module" src="scripts/menu.js" defer></script>
 </head>
 
 <body>
+  
   <header>
     <div class="logo">RiverLine Fly Fishing</div>
     <button id="menuBtn" aria-label="Toggle Menu">&#9776;</button>
@@ -40,18 +41,47 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Experience World-Class Fly Fishing</h1>
-      <p>Guided trout fishing adventures on legendary rivers.</p>
-    </section>
+  
+  <section class="hero">
+    <img src="images/hero.webp" alt="Fly fishing on a river at sunrise">
+    <div class="hero-text">
+      <h1>Explore Premier Fly Fishing Rivers</h1>
+      <p>Your adventure starts here with RiverLine Fly Fishing.</p>
+      <a href="rivers.html" class="btn">View Rivers</a>
+    </div>
+  </section>
 
-    <section class="intro">
-      <h2>Why Choose RiverLine?</h2>
-      <p>Professional guides. Scenic waters. Memorable experiences.</p>
-    </section>
-  </main>
+  
+  <section class="featured-rivers">
+    <h2>Featured Rivers</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/river8.webp" alt="Big Bighorn River">
+        <h3>Big Bighorn River</h3>
+        <p><strong>State:</strong> Montana</p>
+        <p><strong>Species:</strong> Trout</p>
+        <a href="rivers.html" class="btn">Learn More</a>
+      </div>
 
+      <div class="card">
+        <img src="images/river4.webp" alt="Snake River">
+        <h3>Snake River</h3>
+        <p><strong>State:</strong> Wyoming</p>
+        <p><strong>Species:</strong> Trout</p>
+        <a href="rivers.html" class="btn">Learn More</a>
+      </div>
+
+      <div class="card">
+        <img src="images/river8.webp" alt="Bighorn Forks River">
+        <h3>Bighorn Forks River</h3>
+        <p><strong>State:</strong> Montana</p>
+        <p><strong>Species:</strong> Trout</p>
+        <a href="rivers.html" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  
   <footer>
     <p>&copy; 2026 RiverLine Fly Fishing</p>
     <nav aria-label="Footer Navigation">
@@ -61,4 +91,3 @@
   </footer>
 </body>
 </html>
-
