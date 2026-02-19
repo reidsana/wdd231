@@ -1,42 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Book a Trip | RiverLine Fly Fishing</title>
-<meta name="description" content="Book your guided fly fishing trip today.">
-<meta name="author" content="Oksana Reid">
-<link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book a Trip | RiverLine Fly Fishing</title>
+  <meta name="description" content="Reserve your guided fly fishing adventure on premier western rivers with RiverLine Fly Fishing.">
+  <meta name="author" content="Oksana Reid">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Book a Guided Trip | RiverLine Fly Fishing">
+  <meta property="og:description" content="Reserve your guided fly fishing adventure on premier western rivers with RiverLine Fly Fishing.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://reidsana.github.io/wdd231/images/logo.svg">
+  <meta property="og:url" content="https://reidsana.github.io/wdd231/book.html">
 </head>
 
 <body>
+  <header>
+    <div class="logo">RiverLine Fly Fishing</div>
+    <button id="menuBtn" aria-label="Toggle Menu">&#9776;</button>
+    <nav id="navMenu" aria-label="Main Navigation">
+      <a href="index.html">Home</a>
+      <a href="rivers.html">Rivers</a>
+      <a href="book.html" class="active">Book</a>
+    </nav>
+  </header>
 
-<header>...</header>
+  <main>
+    <section class="booking">
+      <h1>Book a Guided Trip</h1>
+      <p>Fill out the form below to reserve your guided fly fishing adventure.</p>
 
-<main>
-<h1>Book a Guided Trip</h1>
+      <form action="thankyou.html" method="get" aria-label="Booking Form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name">
 
-<form action="thankyou.html" method="get">
-<label>Name:
-<input type="text" name="name" required>
-</label>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
 
-<label>Email:
-<input type="email" name="email" required>
-</label>
+        <label for="river">Preferred River:</label>
+        <input type="text" id="river" name="river" required placeholder="e.g., Bighorn River">
 
-<label>Preferred River:
-<input type="text" name="river" required>
-</label>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
 
-<label>Date:
-<input type="date" name="date" required>
-</label>
+        <input type="submit" value="Reserve Now">
+      </form>
+    </section>
+  </main>
 
-<input type="submit" value="Reserve Now">
-</form>
-</main>
-
-<footer>...</footer>
+  <footer>
+    <p>&copy; 2026 RiverLine Fly Fishing</p>
+    <nav aria-label="Footer Navigation">
+      <a href="attributions.html">Attributions</a>
+      <a href="https://your-video-link.com" target="_blank" rel="noopener">Video Demo</a>
+    </nav>
+  </footer>
 </body>
 </html>

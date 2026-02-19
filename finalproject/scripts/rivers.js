@@ -1,25 +1,29 @@
 import { setupMenu } from "./menu.js";
 
+
 setupMenu();
+
 
 const container = document.querySelector("#riverContainer");
 const modal = document.querySelector("#riverModal");
 const modalContent = document.querySelector("#modalContent");
 const closeModal = document.querySelector("#closeModal");
 
+
 async function getRivers() {
   try {
     const response = await fetch("../data/rivers.json");
-    if (!response.ok) throw new Error("Data fetch failed");
+    if (!response.ok) throw new Error("Failed to fetch river data.");
 
-    const data = await response.json();
-    displayRivers(data);
+    const rivers = await response.json();
+    displayRivers(rivers);
 
   } catch (error) {
-    container.innerHTML = "<p>Unable to load rivers.</p>";
-    console.error(error);
+    container.innerHTML = "<p>Unable to load rivers at this time.</p>";
+    console.error("Error fetching rivers:", error);
   }
 }
+
 
 function displayRivers(rivers) {
   rivers.forEach(river => {
@@ -31,9 +35,10 @@ function displayRivers(rivers) {
       <h3>${river.name}</h3>
       <p><strong>State:</strong> ${river.state}</p>
       <p><strong>Species:</strong> ${river.species}</p>
-      <button>View Details</button>
+      <button type="button" aria-label="View details for ${river.name}">View Details</button>
     `;
 
+    
     card.querySelector("button").addEventListener("click", () => {
       modalContent.innerHTML = `
         <h2>${river.name}</h2>
@@ -41,6 +46,7 @@ function displayRivers(rivers) {
         <p><strong>Difficulty:</strong> ${river.difficulty}</p>
       `;
       modal.showModal();
+      
       localStorage.setItem("lastViewedRiver", river.name);
     });
 
@@ -48,8 +54,13 @@ function displayRivers(rivers) {
   });
 }
 
+
 closeModal.addEventListener("click", () => modal.close());
 
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) modal.close();
+});
+
+
 getRivers();
-
-

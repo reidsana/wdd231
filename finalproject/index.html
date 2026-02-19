@@ -1,50 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RiverLine Fly Fishing | Guided Trout Adventures</title>
-<meta name="description" content="RiverLine Fly Fishing offers guided trout fishing adventures across premier western rivers.">
-<meta name="author" content="Oksana Reid">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>RiverLine Fly Fishing | Guided Trout Adventures</title>
+  <meta name="description" content="RiverLine Fly Fishing offers guided trout fishing adventures on premier western rivers. Book your unforgettable experience today.">
+  <meta name="author" content="Oksana Reid">
 
-<meta property="og:title" content="RiverLine Fly Fishing">
-<meta property="og:description" content="Explore premier fly fishing destinations.">
-<meta property="og:type" content="website">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-<link rel="icon" href="images/favicon.ico">
-<link rel="stylesheet" href="styles/main.css">
-<script type="module" src="scripts/main.js" defer></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="RiverLine Fly Fishing | Guided Trout Adventures">
+  <meta property="og:description" content="Experience guided trout fishing adventures on premier western rivers with RiverLine Fly Fishing. Book your trip today!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://reidsana.github.io/wdd231/images/logo.svg">
+  <meta property="og:url" content="https://reidsana.github.io/wdd231/index.html">
+
+  <!-- JavaScript -->
+  <script type="module" src="scripts/main.js" defer></script>
 </head>
 
 <body>
+  <header>
+    <div class="logo">RiverLine Fly Fishing</div>
+    <button id="menuBtn" aria-label="Toggle Menu">&#9776;</button>
+    <nav id="navMenu" aria-label="Main Navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="rivers.html">Rivers</a>
+      <a href="book.html">Book</a>
+    </nav>
+  </header>
 
-<header>
-  <div class="logo">RiverLine Fly Fishing</div>
-  <button id="menuBtn" aria-label="Toggle Menu">&#9776;</button>
-  <nav id="navMenu">
-    <a href="index.html" class="active">Home</a>
-    <a href="rivers.html">Rivers</a>
-    <a href="book.html">Book</a>
-  </nav>
-</header>
+  <main>
+    <section class="hero">
+      <h1>Experience World-Class Fly Fishing</h1>
+      <p>Guided trout fishing adventures on legendary rivers.</p>
+    </section>
 
-<main>
-  <section class="hero">
-    <h1>Experience World-Class Fly Fishing</h1>
-    <p>Guided trout fishing adventures on legendary rivers.</p>
-  </section>
+    <section class="intro">
+      <h2>Why Choose RiverLine?</h2>
+      <p>Professional guides. Scenic waters. Memorable experiences.</p>
+    </section>
+  </main>
 
-  <section class="intro">
-    <h2>Why Choose RiverLine?</h2>
-    <p>Professional guides. Scenic waters. Memorable experiences.</p>
-  </section>
-</main>
-
-<footer>
-  <p>&copy; 2026 RiverLine Fly Fishing</p>
-  <a href="attributions.html">Attributions</a>
-  <a href="https://your-video-link.com" target="_blank">Video Demo</a>
-</footer>
-
+  <footer>
+    <p>&copy; 2026 RiverLine Fly Fishing</p>
+    <nav aria-label="Footer Navigation">
+      <a href="attributions.html">Attributions</a>
+      <a href="https://your-video-link.com" target="_blank" rel="noopener">Video Demo</a>
+    </nav>
+  </footer>
 </body>
 </html>
+
