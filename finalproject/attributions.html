@@ -1,72 +1,82 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>WDD231 | Attributions</title>
-  <meta name="description" content="Oksana Reid's attributions page for WDD231 web projects, listing sources, libraries, and resources.">
+  <title>Attributions | RiverLine Fly Fishing</title>
+  <meta name="description" content="A list of attributions for all images, scripts, and resources used in the RiverLine Fly Fishing website.">
   <meta name="author" content="Oksana Reid">
-
-  
   <link rel="icon" href="images/favicon.ico">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
-
-  <!-- Open Graph Metadata -->
-  <meta property="og:title" content="WDD231 | Attributions">
-  <meta property="og:description" content="Oksana Reid's attributions page for WDD231 web projects, listing sources, libraries, and resources.">
+ 
+  <meta property="og:title" content="Attributions | RiverLine Fly Fishing">
+  <meta property="og:description" content="A list of attributions for all resources used in the RiverLine Fly Fishing website.">
   <meta property="og:image" content="https://reidsana.github.io/wdd231/images/logo.svg">
   <meta property="og:url" content="https://reidsana.github.io/wdd231/attributions.html">
 
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles/main.css">
+
+ 
+  <script type="module" src="scripts/menu.js" defer></script>
 </head>
 <body>
+
   <header>
-    <nav id="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="chamber/">Chamber Project</a></li>
-        <li><a href="final/">Final Project</a></li>
-        <li><a href="https://github.com/reidsana/wdd231" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/oksanareid" target="_blank">LinkedIn</a></li>
-      </ul>
+    <div class="logo">
+      <img src="images/logo.png" alt="RiverLine Fly Fishing Logo" width="150">
+    </div>
+    <button id="menuBtn">&#9776;</button>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="rivers.html">Rivers</a>
+      <a href="book.html">Book</a>
+      <a href="attributions.html" class="active">Attributions</a>
     </nav>
   </header>
 
   <main>
     <h1>Attributions</h1>
-    <p>This page lists all the resources, libraries, and references used for WDD231 projects.</p>
 
-    <!-- Example resource list -->
-    <ul>
-      <li>Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
-      <li>Fonts: <a href="https://fonts.google.com/" target="_blank">Google Fonts - Montserrat</a></li>
-      <li>CSS Reset: normalize.css</li>
-      <li>JavaScript examples: MDN Web Docs</li>
-    </ul>
+    <section>
+      <h2>Images</h2>
+      <ul>
+        <li><strong>River Images:</strong> All river photos sourced from personal photography or royalty-free images hosted in the <code>images</code> folder.</li>
+        <li><strong>Logo:</strong> Created by Oksana Reid.</li>
+      </ul>
+    </section>
 
-    <img src="images/logo.svg" alt="Site logo" width="200">
-    <img src="images/student.jpg" alt="Student portrait of Oksana Reid" width="150">
+    <section>
+      <h2>Scripts</h2>
+      <ul>
+        <li><strong>rivers.js, menu.js:</strong> Custom JavaScript modules created for RiverLine Fly Fishing website.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Fonts</h2>
+      <ul>
+        <li>Roboto font sourced from <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Google Fonts</a>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Resources & References</h2>
+      <ul>
+        <li><a href="https://help.github.com/pages/" target="_blank">GitHub Pages Documentation</a></li>
+        <li>All other resources are original work by Oksana Reid.</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-  <p>📍 Kingston, Jamaica</p>
-  <p>&copy; <span id="year"></span> Kingston Chamber of Commerce</p>
-  <p>Oksana Reid | WDD 231</p>
-  <p>Last Modified: <span id="lastModified"></span></p>
-</footer>
+    <p>&copy; 2026 RiverLine Fly Fishing | All rights reserved</p>
+  </footer>
 
-  
-  <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/date.js" defer></script>
-  <script src="scripts/courses.js" defer></script>
 </body>
 </html>
