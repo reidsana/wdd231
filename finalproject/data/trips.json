@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "River Run", "river": "Bighorn", "price": 250, "level": "Beginner" },
+  { "id": 2, "name": "Mountain Drift", "river": "Madison", "price": 300, "level": "Intermediate" },
+  { "id": 3, "name": "Spring Hatch", "river": "Gallatin", "price": 275, "level": "Beginner" },
+  { "id": 4, "name": "Dry Fly Day", "river": "Yellowstone", "price": 320, "level": "Advanced" },
+  { "id": 5, "name": "Evening Rise", "river": "Snake", "price": 290, "level": "Intermediate" },
+  { "id": 6, "name": "Cold Water", "river": "Green", "price": 260, "level": "Beginner" },
+  { "id": 7, "name": "Backcountry", "river": "Flathead", "price": 350, "level": "Advanced" },
+  { "id": 8, "name": "Stonefly Slam", "river": "Salmon", "price": 310, "level": "Intermediate" },
+  { "id": 9, "name": "Tailwater Pro", "river": "Missouri", "price": 330, "level": "Advanced" },
+  { "id": 10, "name": "Calm Waters", "river": "Provo", "price": 240, "level": "Beginner" },
+  { "id": 11, "name": "Sunset Drift", "river": "Weber", "price": 255, "level": "Beginner" },
+  { "id": 12, "name": "Big Trout", "river": "Henry’s Fork", "price": 360, "level": "Advanced" },
+  { "id": 13, "name": "Wade Trip", "river": "Deschutes", "price": 270, "level": "Intermediate" },
+  { "id": 14, "name": "High Country", "river": "Yakima", "price": 295, "level": "Intermediate" },
+  { "id": 15, "name": "Clear Water", "river": "Metolius", "price": 310, "level": "Advanced" }
+]
